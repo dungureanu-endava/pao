@@ -47,6 +47,7 @@ public class Operators {
 //   !	Logical complement operator; inverts the value of a boolean
         boolean logical = true;
         System.out.println(!logical);
+
     }
 
 //
@@ -55,7 +56,7 @@ public class Operators {
 //   !=	Not equal to
 //   >	Greater than
 //   >=	Greater than or equal to
-//            <	Less than
+//   <	Less than
 //   <=	Less than or equal to
 //
 //
@@ -70,12 +71,12 @@ public class Operators {
 //
 //
 //- Bitwise and Bit Shift Operators (https://www.tutorialspoint.com/Java-Bitwise-Operators)
-//            ~	Unary bitwise complement
-//            <<	Signed left shift
-//            >>	Signed right shift
-//            >>>	Unsigned right shift
-//            &	Bitwise AND
-//            ^	Bitwise exclusive OR
-//            |	Bitwise inclusive OR
+//    ~	Unary bitwise complement
+//    <<	Signed left shift
+//    >>	Signed right shift
+//    >>>	Unsigned right shift
+//    &	Bitwise AND
+//    ^	Bitwise exclusive OR
+//    |	Bitwise inclusive OR
 
 }
