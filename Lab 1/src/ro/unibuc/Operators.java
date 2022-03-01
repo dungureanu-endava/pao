@@ -48,28 +48,77 @@ public class Operators {
         boolean logical = true;
         System.out.println(!logical);
 
-    }
 
 //
 //- The Equality and Relational Operators
 //   ==	Equal to
+        System.out.println("Is equal? " + (10 == 10));
 //   !=	Not equal to
+
+        boolean notEqual = secondNumber != firstNumber;
+        System.out.println("Is not equal? " + notEqual);
+
 //   >	Greater than
+        System.out.println("Greater than? " + (firstNumber > secondNumber));
+//        System.out.println("Greater than? " + firstNumber > secondNumber);
+
 //   >=	Greater than or equal to
+        System.out.println("Greater than or equals? " + (firstNumber >= secondNumber));
+
 //   <	Less than
+        System.out.println("Lesser than? " + (100 < 100));
+
 //   <=	Less than or equal to
-//
+        System.out.println("Lesser than or equals? " + (100 <= 100));
+
 //
 //- Conditional Operators
+        System.out.println("Conditional Operators");
+
+        boolean trueBoolean = true;
+        boolean falseBoolean = false;
+
 //   &&	Conditional AND
+        System.out.println("Conditional AND - " + (trueBoolean && trueBoolean));
+        System.out.println("Conditional AND - " + (trueBoolean && falseBoolean));
+        System.out.println("Conditional AND - " + (falseBoolean && trueBoolean));
+        System.out.println("Conditional AND - " + (falseBoolean && falseBoolean));
+
 //   ||	Conditional OR
+        System.out.println("Conditional OR - " + (trueBoolean || trueBoolean));
+        System.out.println("Conditional OR - " + (trueBoolean || falseBoolean));
+        System.out.println("Conditional OR - " + (falseBoolean || trueBoolean));
+        System.out.println("Conditional OR - " + (falseBoolean || falseBoolean));
+
+
 //   ?:	Ternary (shorthand for if-then-else statement)
-//
+//   (condition) ? (return for true) : (return for false)
+        int variableOne = 300;
+        int variableTwo = 200;
+
+        int max = variableOne > variableTwo ? variableOne : variableTwo;
+        System.out.println("Max value: " + max);
+
 //
 //- Type Comparison Operator
 //   instanceof	Compares an object to a specified type
-//
-//
+
+        Integer integerWrapper = 10;
+
+        boolean isInstance = (integerWrapper instanceof Integer);
+        System.out.println("Integer instance? " + isInstance);
+//        System.out.println("Long instance? " + (integerWrapper instanceof Long)); - Does not work
+        isInstance = (integerWrapper instanceof Number);
+        System.out.println("Number instance? " + isInstance);
+
+        Operators operatorsInstance = new Operators();
+        isInstance = (operatorsInstance instanceof Operators);
+        System.out.println("Operators instance? " + isInstance);
+        isInstance = (operatorsInstance instanceof Object);
+        System.out.println("Object instance? " + isInstance);
+
+    }
+
 //- Bitwise and Bit Shift Operators (https://www.tutorialspoint.com/Java-Bitwise-Operators)
 //    ~	Unary bitwise complement
 //    <<	Signed left shift
