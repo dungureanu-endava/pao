@@ -24,16 +24,9 @@
   - [Installation Guide](https://adoptium.net/installation.html)
 
 #### Update Environment Variables to be able to run the Java commands:
--	Click on Start/Windows Icon and start typing “environment variables”
--	Select “Edit the system environment variables”
-
--	Click on “Environment Variables…”
-
--	Create a new variable “JAVA_HOME” and set the value to be the Installation path for Java JDK
-
--	Update the existing Path variable and add a new line with “%JAVA_HOME%\bin”
-
--	Test to see if it’s working (run “java --version” in the command line)
+- Windows: [Tutorial](https://www.thewindowsclub.com/set-java_home-in-windows-10)
+- Linux: [Tutorial](https://sharadchhetri.com/how-to-set-java-environment-variables-in-linux-or-centos/)
+- Test to see if it’s working (run `java --version` in the command line)
 
 
 ### 2.2. IDE for Java
@@ -51,20 +44,19 @@
 - Create repository: https://github.com/new
 
 #### 2.3.3. Git Bash
--	Open Git Bash and navigate to a folder where you want to store your code
--	Here clone your newly created repository
-     o	git clone https://github.com/...
-
--	Copy the Java files in the generated folder
--	Check the status of the repository
-     o	git status
--	 Select the files that you would want to commit/save to your repository
-      o	git add .
--	Create a commit
-     o	git commit -m "First commit"
--	Push the code
-     o	git push
--	Check to see your if the code is available in GitHub
+- Open Git Bash and navigate to a folder where you want to store your code
+- Here clone your newly created repository
+  - `git clone https://github.com/...`
+- Copy the Java files in the generated folder
+- Check the status of the repository
+  - `git status`
+- Select the files that you would want to commit/save to your repository
+  - `git add .`
+- Create a commit
+  - `git commit -m "First commit"`
+- Push the code
+  - `git push`
+- Check to see your if the code is available in GitHub
 
 
 ## 3. Evaluare
@@ -75,4 +67,4 @@
 - There are no stupid questions
 - For any queries, first check [Stack Overflow](https://stackoverflow.com/)
 - Good read: [Clean Code](https://www.goodreads.com/book/show/3735293-clean-code)
-    - Interesting person to follow: Robert C. Martin a.k.a. Uncle Bob
+  - Interesting person to follow: Robert C. Martin a.k.a. Uncle Bob
