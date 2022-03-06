@@ -4,6 +4,7 @@ import ro.unibuc.inheritance.hierarchical.Doctor;
 import ro.unibuc.inheritance.hierarchical.Teacher;
 import ro.unibuc.inheritance.multilevel.TransferStudent;
 import ro.unibuc.inheritance.finals.Superhero;
+import ro.unibuc.inheritance.multiple.Superman;
 import ro.unibuc.inheritance.single.Student;
 
 public class Definition {
@@ -54,6 +55,16 @@ public class Definition {
         teacher.displayTeacherDetails();
     }
 
+    public void usingMultipleInheritance() {
+        Superman superman = new Superman();
+        superman.setName("Clark Kent");
+        superman.setAge(72);
+
+        superman.displayPersonDetails();
+
+        superman.fly();
+    }
+
     public void usingFinalKeywordInInheritance() {
         Superhero superhero = new Superhero();
         superhero.setName("Haley Pearson");
@@ -71,7 +82,8 @@ public class Definition {
         definition.usingSingleInheritance();
         definition.usingMultilevelInheritance();
         definition.usingHierarchicalInheritance();
-
+        definition.usingMultipleInheritance();
+        definition.usingFinalKeywordInInheritance();
     }
 
 }

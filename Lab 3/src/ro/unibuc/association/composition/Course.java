@@ -1,8 +1,12 @@
-package ro.unibuc.association;
+package ro.unibuc.association.composition;
 
 import java.util.Arrays;
 
-public class Composition {
+public class Course {
+
+    private String degree;
+    private Teacher teacher;
+    private Student[] students;
 
     public static void main(String[] args) {
         Teacher malik = new Teacher("Malik Richard");
@@ -18,6 +22,22 @@ public class Composition {
         System.out.println(course);
     }
 
+    @Override
+    public String toString() {
+        return "Course Details: " + "Degree '" + degree + '\'' + "; Teacher " + teacher + "; Students: " + Arrays.toString(students);
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    public void setStudents(Student[] students) {
+        this.students = students;
+    }
 }
 
 class Teacher {
@@ -48,31 +68,4 @@ class Student {
         return name;
     }
 
-}
-
-class Course {
-
-    private String degree;
-    private Teacher teacher;
-    private Student[] students;
-
-    @Override
-    public String toString() {
-        return "Course Details: " +
-                "Degree '" + degree + '\'' +
-                "; Teacher " + teacher +
-                "; Students: " + Arrays.toString(students);
-    }
-
-    public void setDegree(String degree) {
-        this.degree = degree;
-    }
-
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
-    public void setStudents(Student[] students) {
-        this.students = students;
-    }
 }

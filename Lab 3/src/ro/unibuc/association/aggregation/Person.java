@@ -1,6 +1,13 @@
-package ro.unibuc.association;
+package ro.unibuc.association.aggregation;
 
-public class Aggregation {
+public class Person {
+
+    private String name;
+    private Address homeAddress;
+
+    public Person(String name) {
+        this.name = name;
+    }
 
     public static void main(String[] args) {
         Address address = new Address("County Road", "France");
@@ -9,6 +16,15 @@ public class Aggregation {
         madeleine.setHomeAddress(address);
 
         System.out.println(madeleine);
+    }
+
+    @Override
+    public String toString() {
+        return "Person Information: " +  "Name: '" + name + '\'' +  "; Home Address: " + homeAddress;
+    }
+
+    public void setHomeAddress(Address address) {
+        this.homeAddress = address;
     }
 
 }
@@ -28,23 +44,4 @@ class Address {
         return "Street: '" + street + '\'' + "; Country: '" + country + '\'';
     }
 
-}
-
-class Person {
-
-    private String name;
-    private Address homeAddress;
-
-    public Person(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Person Information: " +  "Name: '" + name + '\'' +  "; Home Address: " + homeAddress;
-    }
-
-    public void setHomeAddress(Address address) {
-        this.homeAddress = address;
-    }
 }
