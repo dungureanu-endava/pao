@@ -32,6 +32,10 @@ class OuterClass {
         OuterClass.staticField = staticField;
     }
 
+    public void printSomething() {
+        printStaticField();
+    }
+
     public static void printStaticField() {
         System.out.println("Accessing static method; Static field: " + staticField);
     }

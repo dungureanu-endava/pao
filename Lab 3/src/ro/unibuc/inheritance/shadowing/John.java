@@ -36,6 +36,9 @@ class Main {
 
         JohnDoe johnDoe = new JohnDoe();
         johnDoe.callJohnDoePrivateMethod();
+
+        John john2 = new JohnDoe();
+        john2.callJohnPrivateMethod();
     }
 
 }

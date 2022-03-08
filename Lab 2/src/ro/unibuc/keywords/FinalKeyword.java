@@ -2,6 +2,8 @@ package ro.unibuc.keywords;
 
 public class FinalKeyword {
 
+    final static int NUMBER = 30;
+
     public static void main(String[] args) {
         AudiQ5 car = new AudiQ5();
         // car.brand = "New Brand";

@@ -1,6 +1,7 @@
 package ro.unibuc.inheritance;
 
 import ro.unibuc.inheritance.hierarchical.Doctor;
+import ro.unibuc.inheritance.hierarchical.Person;
 import ro.unibuc.inheritance.hierarchical.Teacher;
 import ro.unibuc.inheritance.multilevel.TransferStudent;
 import ro.unibuc.inheritance.finals.Superhero;
@@ -45,6 +46,8 @@ public class Definition {
         doctor.displayPersonDetails();
         doctor.displayDoctorDetails();
 
+        usingTheParent(doctor);
+
         Teacher teacher = new Teacher();
         teacher.setName("Damion Andrews");
         teacher.setAge(31);
@@ -53,6 +56,12 @@ public class Definition {
 
         teacher.displayPersonDetails();
         teacher.displayTeacherDetails();
+
+        usingTheParent(teacher);
+    }
+
+    public void usingTheParent(Person person) {
+        System.out.println("The name of the person: " + person.getName());
     }
 
     public void usingMultipleInheritance() {

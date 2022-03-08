@@ -10,5 +10,4 @@ public class Implementation implements Definition {
     public static void main(String[] args) {
         // Definition.INTEGER_CONSTANT = 3; // This does not work, as the field is final
     }
-
 }

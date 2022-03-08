@@ -18,6 +18,11 @@ public class Werwolf implements Wolf, Human {
 
     }
 
+    @Override
+    public void run() {
+        Wolf.super.run();
+    }
+
 //    @Override
 //    public void run() {
 //        Wolf.super.run();

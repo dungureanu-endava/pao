@@ -18,6 +18,8 @@ class Father extends GrandFather {
 
 class Baby extends Father {
 
+    void print() {}
+
     @Override
     void move() {
         System.out.println("I crawl and have fun!");
@@ -26,12 +28,14 @@ class Baby extends Father {
     public static void main(String[] args) {
         Baby baby = new Baby();
         baby.move();
+        baby.print();
 
         Father father = new Father();
         father.move();
 
         GrandFather grandFather = new Baby();
         grandFather.move();
+//        grandFather.print();
     }
 
 }

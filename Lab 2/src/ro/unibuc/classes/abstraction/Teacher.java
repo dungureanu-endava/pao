@@ -1,7 +1,5 @@
 package ro.unibuc.classes.abstraction;
 
-import java.util.Arrays;
-
 public class Teacher extends Person {
 
     private int teacherId;
