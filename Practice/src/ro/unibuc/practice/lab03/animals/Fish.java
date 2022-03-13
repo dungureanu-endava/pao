@@ -1,6 +1,6 @@
-package ro.unibuc.practice.zoo.animals;
+package ro.unibuc.practice.lab03.animals;
 
-import ro.unibuc.practice.zoo.actions.Action;
+import ro.unibuc.practice.lab03.actions.Action;
 
 public class Fish implements Animal {
 

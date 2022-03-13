@@ -1,10 +1,10 @@
-package ro.unibuc.practice.zoo;
+package ro.unibuc.practice.lab03;
 
-import ro.unibuc.practice.zoo.actions.Action;
-import ro.unibuc.practice.zoo.animals.Animal;
-import ro.unibuc.practice.zoo.animals.Fish;
-import ro.unibuc.practice.zoo.animals.Lion;
-import ro.unibuc.practice.zoo.animals.Monkey;
+import ro.unibuc.practice.lab03.actions.Action;
+import ro.unibuc.practice.lab03.animals.Animal;
+import ro.unibuc.practice.lab03.animals.Fish;
+import ro.unibuc.practice.lab03.animals.Lion;
+import ro.unibuc.practice.lab03.animals.Monkey;
 
 import java.util.Scanner;
 

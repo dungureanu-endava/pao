@@ -28,7 +28,6 @@
 - Linux: [Tutorial](https://sharadchhetri.com/how-to-set-java-environment-variables-in-linux-or-centos/)
 - Test to see if it’s working (run `java --version` in the command line)
 
-
 ### 2.2. IDE for Java
 - [IntelliJ](https://www.jetbrains.com/idea/)
 - [Eclipse](https://www.eclipse.org/)
@@ -58,8 +57,7 @@
   - `git push`
 - Check to see your if the code is available in GitHub
 
-
-## 3. Evaluare
+## 3. Project
 
 ### [Project Requirements](/Project%20Requirements/Requirements.md)
 

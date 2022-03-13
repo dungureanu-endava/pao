@@ -1,4 +1,4 @@
-package ro.unibuc.practice.zoo.actions;
+package ro.unibuc.practice.lab03.actions;
 
 public enum Action {
 
