@@ -1,7 +1,7 @@
 # Questions
 
-## [Lab 1](/Questions/Lab 01.md)
+## [Lab 1](https://github.com/dungureanu-endava/pao/blob/main/Questions/Lab%2001.md)
 
-## [Lab 2](/Questions/Lab 02.md)
+## [Lab 2](https://github.com/dungureanu-endava/pao/blob/main/Questions/Lab%2002.md)
 
-## [Lab 3](/Questions/Lab 03.md)
+## [Lab 3](https://github.com/dungureanu-endava/pao/blob/main/Questions/Lab%2003.md)

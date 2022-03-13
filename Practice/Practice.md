@@ -1,5 +1,5 @@
 # Practice
 
-## [Lab 3](/Practice/Lab 03.md)
+## [Lab 3](https://github.com/dungureanu-endava/pao/blob/main/Practice/Lab%2003.md)
 
-## [Lab 4](/Practice/Lab 04.md)
+## [Lab 4](https://github.com/dungureanu-endava/pao/blob/main/Practice/Lab%2004.md)
