@@ -61,7 +61,15 @@
 
 ### [Project Requirements](/Project%20Requirements/Requirements.md)
 
-## 4. Notes
+## 4. Practice
+
+### [Practice](/Practice/Practice.md)
+
+## 5. Questions
+
+### [Questions](/Questions/Questions.md)
+
+## 6. Notes
 - There are no stupid questions
 - For any queries, first check [Stack Overflow](https://stackoverflow.com/)
 - Good read: [Clean Code](https://www.goodreads.com/book/show/3735293-clean-code)

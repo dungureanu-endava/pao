@@ -1,4 +1,4 @@
-package ro.unibuc.practice.lab04.immutable;
+package ro.unibuc.immutable;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package ro.unibuc.practice.lab04.singleton;
+package ro.unibuc.singleton;
 
 class DatabaseConnection {
 

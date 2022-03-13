@@ -1,4 +1,4 @@
-package ro.unibuc.practice.lab04.strings;
+package ro.unibuc.strings;
 
 import java.util.Arrays;
 import java.util.Random;
