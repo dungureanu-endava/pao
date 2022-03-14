@@ -37,12 +37,12 @@ class StringExamples {
 
         System.out.println(".charAt(index) for retrieving a character at a particular index: " + randomString.charAt(13));
         System.out.println(".indexOf(string) for retrieving the first position found of a substring: " + randomString.indexOf("hodor"));
-        System.out.println(".lastIndexOf(string) for retrieving the last position found of a substring: " + randomString.indexOf("dor"));
+        System.out.println(".lastIndexOf(string) for retrieving the last position found of a substring: " + randomString.lastIndexOf("dor"));
 
         System.out.println(".substring(index) this returns a substring starting at a given index: " + randomString.substring(13));
         System.out.println("or .substring(index1, index2) returns a substring between two indexes: " + randomString.substring(13, 25));
 
-        System.out.println(".toLowerCase() and .toUpperCase() are self explanatory" + randomString.toUpperCase());
+        System.out.println(".toLowerCase() and .toUpperCase() are self explanatory: " + randomString.toUpperCase());
         System.out.println(".trim() removes all unnecessary spaces before and after the string: " + randomString.trim());
 
         System.out.println(".replace(string1, string2) replaces all occurrences of the first string with the second one: " + randomString.replace("dor", "norm"));
@@ -55,7 +55,7 @@ class StringExamples {
         System.out.println("Regex expressions are patterns used for matching/searching inside strings");
         System.out.println("[abc] match one character from the options 'a', 'b', 'c': " + "b".matches("[abc]"));
         System.out.println("[0-9] match one character from the range 0 to 9: " + "6".matches("[0-9]"));
-        System.out.println("[0-9]{2} match two characters from the range 0 to 9: " + "10".matches("[0-9]{2}"));
+        System.out.println("[0-9]{2} match two characters from the range 0 to 9: " + "99".matches("[0-9]{2}"));
         System.out.println("[X-Z] match one character from the range 'X' to 'Z': " + "Y".matches("[X-Z]"));
         System.out.println("[a-z]+ match any characters that contains at least one from the range 'a' to 'z': " + "Libet".matches("[a-z]+"));
         System.out.println("[a-z]* match any characters that contains zero or more from the range 'a' to 'z': " + "Libet".matches("[a-z]*"));

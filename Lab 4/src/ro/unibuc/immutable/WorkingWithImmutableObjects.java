@@ -110,9 +110,15 @@ public class WorkingWithImmutableObjects {
 
     public static void main(String[] args) {
         Chip masterChip = new Chip(311, "Mastercard Chip");
+        System.out.println(masterChip);
 
         CreditCard creditCard = new CreditCard(3412_5392L, "John Doe", new Date(), Brand.MASTERCARD, masterChip);
 
+        System.out.println(creditCard);
+
+        masterChip.setChipId(333);
+
+        System.out.println(masterChip);
         System.out.println(creditCard);
     }
 
