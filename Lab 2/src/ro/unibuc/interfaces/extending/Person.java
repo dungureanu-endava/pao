@@ -14,4 +14,8 @@ public interface Person {
         System.out.println("Accessing interface default method; Person age: " + getAge());
     }
 
+    static void displayTruth() {
+        System.out.println("Universal truth that is available for all Persons!");
+    }
+
 }

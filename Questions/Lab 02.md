@@ -74,3 +74,21 @@ public class Main {
 ### Can a static method defined in a class use an instance variable of the same class?
 
 ### What are the key modifiers of an interface variable?
+
+### Can interfaces have constructors?
+
+### Can interfaces have static methods?
+
+### Will the following sniped of code compile? If it compiles, what will be displayed and why?
+```
+interface Person {
+    static void displayTruth() { privateTruth(); }
+    private static void privateTruth() { System.out.println("Universal truth that is available for all Persons!"); }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person.displayTruth();
+    }
+}
+```

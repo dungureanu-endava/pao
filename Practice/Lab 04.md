@@ -1,6 +1,12 @@
 ## Lab 4
 
-### Try to implement a small project that simulates a publishing company. 
+### I. Implement a method that figures out whether one string is an anagram of another string. The program should ignore white space and punctuation. (An anagram is a word or phrase formed by rearranging the letters in another word or phrase. For example, "parliament" is an anagram of "partial men," and "anagram" is an anagram of "nag a ram.")
+
+### II. Implement a method that figures out whether one string is a palindrome. The program should ignore white space and punctuation. (A palindrome is a word, sentence, verse, or even number that reads the same backward or forward. For example, "Taco cat", "kayak", "A man, a plan, a canal, Panama!", 1881 are all palindromes)
+
+### III. Implement a method that figures out how many times a word appears in a text. The program should ignore word case, white space and punctuation. (For example, given text "Usu ipso omne quam erit deum rei. Negavi missae co usu, de falsam numero fallar ad in. Nam duo veluti tam factum ausint causam usu nescio." and word "usu", it should return 3)
+
+### IV. Implement a small project that simulates a publishing company. 
 ### Each author will make a request to the publishing company that will contain a title, content and size specifications (number of characters per page) for his/her book.
 ### At the end of the process you will be providing a Book (class) that will contain an array of Pages, and the first page of a book should always contain the title and author name.
 ### To complete a request, you will have to generate a Book that will contain a number of Pages, and then print it. Note. the first page of a book should always contain the title and author name.

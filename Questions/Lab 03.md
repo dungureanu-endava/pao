@@ -14,13 +14,19 @@
 
 ### Will the following sniped of code compile? If it compiles, what will be displayed and why?
 ```
-final class FinalClass { }
+final class FinalClass {
+    public void method() { System.out.println("Inside FinalClass method!"); }
+}
 
-class TestClass extends FinalClass { }
+class TestClass extends FinalClass {
+    @Override
+    public void method() { System.out.println("Inside TestClass method!"); }
+}
 
 public class Main {
     public static void main(String[] args) {
         TestClass instance = new FinalClass();
+        instance.method();
     }
 }
 ```
@@ -176,6 +182,30 @@ public class Main {
         System.out.println("Instance value: " + instance.getValue());
         System.out.println("Instance decimal: " + instance.getDecimal());
         System.out.println("Instance number: " + instance.getNumber());
+    }
+}
+```
+
+### Will the following sniped of code compile? If it compiles, what will be displayed and why?
+```
+interface Person {
+    int age = 40;
+}
+
+class Mike implements Person {
+    public Mike(Integer age) {
+        this.age = age;
+    }
+
+    public void displayInformation() {
+        System.out.println("Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Mike instance = new Mike(38);
+        instance.displayInformation();
     }
 }
 ```

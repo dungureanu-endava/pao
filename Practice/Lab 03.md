@@ -1,6 +1,6 @@
 ## Lab 3
 
-### Try to implement a small project that simulates a Mini Zoo where people go to play with different animals.
+### I. Implement a small project that simulates a Mini Zoo where people go to play with different animals.
 
 ### The Mini Zoo will have between 3 to 5 animals.
 
