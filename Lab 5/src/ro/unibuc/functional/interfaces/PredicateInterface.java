@@ -33,7 +33,10 @@ public class PredicateInterface {
         System.out.println("Test instance: " + nullCheck.test(anton));
 
         Predicate<Doctor> licenseCheck = (doctor) -> doctor.isLicenseValid();
-        System.out.println("Is the doctor licensed: " + nullCheck.and(licenseCheck).test(anton));
+//        Predicate<Doctor> licenseCheck = Doctor::isLicenseValid;
+
+        Predicate linkedPredicate = nullCheck.and(licenseCheck);
+        System.out.println("Is the doctor licensed: " + linkedPredicate.test(anton));
 
         Doctor unknownDoctor = null;
         System.out.println("Is the unknown doctor licensed: " + nullCheck.and(licenseCheck).test(unknownDoctor));

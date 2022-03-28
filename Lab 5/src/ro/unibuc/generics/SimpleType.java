@@ -34,14 +34,24 @@ class Container<T> { // T − The generic type passed. It can take any Object, a
 
 }
 
+record Itemz(String name) {
+
+}
+
 public class SimpleType {
 
     public static void main(String[] args) {
-        Container<String> container = new Container<String>(new String[]{"First item", "Second item"});
-        container.addItem("Third item");
-        container.addItem("Forth item");
+        Container<String> stringContainer = new Container<String>(new String[]{"First item", "Second item"});
+        stringContainer.addItem("Third item");
+        stringContainer.addItem("Forth item");
 
-        System.out.println("Items in container: " + Arrays.toString(container.getItems()));
+        System.out.println("Items in container: " + Arrays.toString(stringContainer.getItems()));
+
+        Container<Itemz> itemzContainer = new Container<>(new Itemz[]{new Itemz("First item"), new Itemz("Second item")});
+        itemzContainer.addItem(new Itemz("Third item"));
+        itemzContainer.addItem(new Itemz("Forth item"));
+
+        System.out.println("Items in container: " + Arrays.toString(itemzContainer.getItems()));
     }
 
 }

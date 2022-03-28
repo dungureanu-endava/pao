@@ -22,6 +22,11 @@ class Dog extends Animal {
     public Dog(String name) {
         this.name = name;
     }
+
+    public String getName() {
+        return "My name is Dog";
+    }
+
 }
 
 public class BoundedWildcards {

@@ -209,3 +209,5 @@ public class Main {
     }
 }
 ```
+
+### What is a marker interface?

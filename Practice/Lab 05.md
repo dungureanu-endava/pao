@@ -1,7 +1,7 @@
 ## Lab 5
 
 ### I. Implement a small project that simulates a cocktail bar. 
-The bar will have customer that will be able to order one or more cocktails from the menu bellow.
+The bar will have customers that will be able to order one or more cocktails from the menu bellow.
 
 ### Menu:
 - MOJITO: 

@@ -66,11 +66,11 @@ public class BoundedTypes {
         }
     }
 
-    public static void getASlice2(Pizza pizza) {
-        System.out.println(pizza.getSlice());
+    public static void getASlice2(Sliceable sliceable) {
+        System.out.println(sliceable.getSlice());
     }
 
-    public static <T extends Sliceable> void getASlice(T pizza) {
-        System.out.println(pizza.getSlice());
+    public static <T extends Sliceable> void getASlice(T sliceable) {
+        System.out.println(sliceable.getSlice());
     }
 }

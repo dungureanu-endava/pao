@@ -24,7 +24,7 @@ public class FunctionalInterfaces {
         System.out.println("Calculating the square root: " + square.calculate(135));
 
         GenericFunction<Integer, String> convertor = (Integer value) -> value.toString();
-        System.out.println("Converting Integer to String: " + convertor.apply(315));
+        System.out.println("Converting Integer to String: " + (convertor.apply(315) instanceof String));
 
         Function<String, Integer> stringLengthFunction = String::length;
         System.out.println("Converting Integer to String: " + stringLengthFunction.apply("Eligendo im comparem."));

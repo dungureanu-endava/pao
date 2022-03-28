@@ -20,9 +20,13 @@ public class ConsumerInterface {
 
     public static void main(String[] args) {
         Person kris = new Person("Kristiane Cassiopeia", 27);
+        Person tim = new Person("Tim Cassiopeia", 3);
 
         GenericConsumer<Person> genericConsumer = (person) -> System.out.println("Accessing GenericConsumer; Person: " + person);
         genericConsumer.method(kris);
+        genericConsumer.method(tim);
+        genericConsumer.method(kris);
+        genericConsumer.method(tim);
 
         Consumer<Person> consumer = (person) -> System.out.println("Accessing java.util.function.Consumer; Person: " + person);
         consumer.accept(kris);

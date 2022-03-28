@@ -49,7 +49,7 @@ public class Lambdas {
 
         Comparator<Integer> integerComparator = IntegerComparator::test;
         compareElements(itemComparator, new Item("Unique Key", "Value"), new Item("Other Key", "Value"));
-        compareElements(integerComparator, 30, 33);
+        compareElements(integerComparator, 30, 30);
     }
 
     public static void executeOperation(Operation operation, int firstValue, int secondValue) {

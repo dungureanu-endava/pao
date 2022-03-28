@@ -37,7 +37,7 @@ public class MultipleTypes {
         Element<Integer, String>[] array = new Element[]{firstElement, secondElement, thirdElement};
 
         System.out.println("Array contains key 2: " + containsKey(array, 2));
-        System.out.println("Array contains value 'Text': " + containsValue(array, "Text"));
+        System.out.println("Array contains value 'Text': " + containsValue(array, "New Text"));
     }
 
     public static <K, V> boolean containsKey(Pair<K, V>[] array, K key) {

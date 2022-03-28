@@ -48,6 +48,7 @@ public class SupplierInterface {
         System.out.println("Generate random string: " + randomStringGenerator.get());
 
         Supplier<LocalDateTime> supplier = () -> LocalDateTime.now();
+//        Supplier<LocalDateTime> supplier = LocalDateTime::now;
         System.out.println("Get current date and time: " + supplier.get());
 
         Bottle defaultBottle = factory(Bottle::new);
