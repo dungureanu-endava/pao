@@ -28,6 +28,8 @@ public class WorkingWithFiles {
 
         writer.bufferedWriter(text);
         reader.bufferedReader();
+
+        FileUtils.listFiles("Lab 6/src/ro/unibuc/io/");
     }
 
 }
