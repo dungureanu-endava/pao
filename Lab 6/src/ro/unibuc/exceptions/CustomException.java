@@ -46,7 +46,7 @@ class TestCustomExceptions {
     }
 }
 
-//public class CustomExceptions extends RuntimeException { <- For Unchecked Exception
+//public class CustomException extends RuntimeException { // <- For Unchecked Exception
 public class CustomException extends Exception { // <- For Checked Exception
 
     // default constructor

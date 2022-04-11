@@ -5,12 +5,13 @@ public class ExceptionHandler {
     public static void main(String[] args) {
         ExceptionHandler exceptionHandler = new ExceptionHandler();
 
-        exceptionHandler.tryCatch();
-        exceptionHandler.tryFinally();
-        exceptionHandler.tryCatchFinally();
-        exceptionHandler.tryCatchButNotHandled();
-        exceptionHandler.tryCatchFinallyButNotHandled();
-        exceptionHandler.tryCatchFinallyButNoExceptionThrown();
+//        exceptionHandler.tryCatch();
+//        exceptionHandler.tryFinally();
+//        exceptionHandler.tryCatchFinally();
+//        exceptionHandler.tryCatchButNotHandled();
+//        exceptionHandler.tryCatchFinallyButNotHandled();
+//        exceptionHandler.tryCatchFinallyButNoExceptionThrown();
+        exceptionHandler.tryWithMultipleCatches();
     }
 
     public void tryCatch() {
@@ -84,6 +85,24 @@ public class ExceptionHandler {
             System.out.println("Inside try block");
         } catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println("Exception caught in Catch block");
+        } finally {
+            System.out.println("Executing finally");
+        }
+
+        System.out.println("Outside try-catch clause");
+    }
+
+    public void tryWithMultipleCatches() {
+        int[] array = new int[5];
+        try {
+            int value = array[5];
+            System.out.println("Inside try block");
+        } catch (NullPointerException exception) {
+            System.out.println("Exception caught in NullPointerException Catch block");
+        } catch (IndexOutOfBoundsException exception) {
+            System.out.println("Exception caught in IndexOutOfBoundsException Catch block");
+        } catch (RuntimeException exception) {
+            System.out.println("Exception caught in RuntimeException Catch block");
         } finally {
             System.out.println("Executing finally");
         }

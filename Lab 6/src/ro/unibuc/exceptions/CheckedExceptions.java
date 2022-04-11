@@ -13,10 +13,12 @@ public class CheckedExceptions {
     }
 
     public void fileNotFoundException() throws FileNotFoundException {
+        System.out.println("In fileNotFoundException method");
         FileInputStream inputStream = new FileInputStream("NewFile");
     }
 
     public void exception(boolean throwException) throws Exception {
+        System.out.println("In exception method");
         if (throwException) {
             throw new Exception("Throwing checked exception!");
         }

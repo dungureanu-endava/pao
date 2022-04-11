@@ -9,3 +9,5 @@
 ## [Lab 6](https://github.com/dungureanu-endava/pao/blob/main/Practice/Lab%2006.md)
 
 ## [Lab 7](https://github.com/dungureanu-endava/pao/blob/main/Practice/Lab%2007.md)
+
+## [Lab 8](https://github.com/dungureanu-endava/pao/blob/main/Practice/Lab%2008.md)

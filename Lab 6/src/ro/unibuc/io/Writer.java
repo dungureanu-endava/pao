@@ -24,6 +24,22 @@ public class Writer {
         } catch (IOException ioException) {
             throw new WriterException("Exception raised while using FileOutputStream", ioException);
         }
+
+//        FileOutputStream fileOutputStream = null;
+//        try {
+//            fileOutputStream = new FileOutputStream(fileName);
+//            // Do something
+//        } catch (IOException ioException) {
+//            throw new WriterException("Exception raised while using FileOutputStream", ioException);
+//        } finally {
+//            if (fileOutputStream != null) {
+//                try {
+//                    fileOutputStream.close();
+//                } catch (IOException ioException) {
+//                    System.out.println("Handle this");
+//                }
+//            }
+//        }
     }
 
     public void fileWriter(String text) throws WriterException {
