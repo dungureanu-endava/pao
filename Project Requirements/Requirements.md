@@ -10,7 +10,7 @@ Timeline for presenting each stage:
 
 * Stage I: April 1st, 2022
 * Stage II: April 29th, 2022
-* Stage III: May 27th, 2022
+* Stage III: May 23th, 2022
 
 ## Stage I
 
