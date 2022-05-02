@@ -13,8 +13,9 @@ public class FlatMap {
 
         List<List<Integer>> listOfLists = Arrays.asList(list1, list2, list3);
 
-        List<Integer> listOfAllIntegers = listOfLists.stream()
-                .flatMap(list -> list.stream()) // also function here
+        List<Integer> listOfAllIntegers = listOfLists.stream() // list1, list2, list3
+                .flatMap(list -> list.stream()) // also function here - 1, 2, 3, 4, 5, 6, 7, 8, 9
+                .peek(System.out::println)
                 .collect(Collectors.toList());
 
         System.out.println(listOfAllIntegers);

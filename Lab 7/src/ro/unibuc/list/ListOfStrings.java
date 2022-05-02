@@ -20,8 +20,12 @@ public class ListOfStrings {
         animals.remove("Pig"); // cat fish turtle
 
         System.out.println("For-each iteration: ");
-        for (String animal : animals) {
+        for (var animal : animals) {
             System.out.print(animal + " ");
+        }
+
+        for (int index = 0; index < animals.size(); index++) {
+            System.out.print(animals.get(index));
         }
 
         System.out.println("\nIterator: ");
