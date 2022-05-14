@@ -7,15 +7,23 @@ public class MessageRunnable implements Runnable {
         System.out.println("Hello from another thread " + Thread.currentThread().getName());
     }
 
+}
+
+class MainRunnable {
+
     public static void main(String[] args) {
         System.out.println("Begin main");
 
-        Thread helloRunnable = new Thread(new MessageRunnable());
-//        helloRunnable.setName("Runnable-test");
+        var runnableExample = new MessageRunnable();
+        Thread helloRunnable1 = new Thread(runnableExample);
+//        Thread helloRunnable2 = new Thread(runnableExample);
 
-        helloRunnable.start();
-//        helloRunnable.run();
+        helloRunnable1.setName("Runnable-test");
+
+        helloRunnable1.start();
+//        helloRunnable1.run();
 
         System.out.println("End main!");
     }
+
 }

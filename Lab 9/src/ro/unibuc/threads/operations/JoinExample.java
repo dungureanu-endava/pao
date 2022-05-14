@@ -7,6 +7,10 @@ public class JoinExample extends Thread {
         System.out.println("Hello from thread " + Thread.currentThread().getName() + "!");
     }
 
+}
+
+class MainJoin {
+
     public static void main(String[] args) {
         System.out.println("Begin main");
 
@@ -33,4 +37,5 @@ public class JoinExample extends Thread {
 
         System.out.println("End main");
     }
+
 }

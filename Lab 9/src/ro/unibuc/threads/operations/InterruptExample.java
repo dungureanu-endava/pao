@@ -7,9 +7,8 @@ class MessageRunnable implements Runnable {
     @Override
     public void run() {
         while (!Thread.interrupted()) {
-//            System.out.println("Hello");
+            System.out.println("Hello");
         }
-
     }
 }
 

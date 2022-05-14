@@ -7,6 +7,10 @@ public class MessageThread extends Thread {
         System.out.println("Hello from thread " + Thread.currentThread().getName());
     }
 
+}
+
+class MainThread {
+
     public static void main(String[] args) {
         System.out.println("Begin main");
 
@@ -18,4 +22,5 @@ public class MessageThread extends Thread {
 
         System.out.println("End main");
     }
+
 }
